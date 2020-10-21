@@ -38,33 +38,33 @@ class App:
 
         self.window.mainloop()
 
-        def snapshot(self):
-            ret, frame= self.vid.get_frame()
+    def snapshot(self):
+        ret, frame= self.vid.get_frame()
 
-            if ret:
-                cv2.imwrite("frame-"+time.strftime("%d-%m-%Y-%H-%M-%S")+".jpg", cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
+        if ret:
+            cv2.imwrite("frame-"+time.strftime("%d-%m-%Y-%H-%M-%S")+".jpg", cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
 
-        def open_camera(self):
-            self.ok= True
-            self.timer.start()
-            print("Camera Opened => Recording Starts")
-        
-        def close_camera(self):
-            self.ok= False
-            self.timer.stop()
-            print("Camera Closed => Recording Stops")
+    def open_camera(self):
+        self.ok= True
+        self.timer.start()
+        print("Camera Opened => Recording Starts")
+    
+    def close_camera(self):
+        self.ok= False
+        self.timer.stop()
+        print("Camera Closed => Recording Stops")
 
-            #Upadte GUI with Cv2, pil
+        #Upadte GUI with Cv2, pil
 
-        def update(Self):
-            ret, frame =self.vid.get_frame()
-            if self.ok:
-                self.vid.out.write(cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
+    def update(Self):
+        ret, frame =self.vid.get_frame()
+        if self.ok:
+            self.vid.out.write(cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
 
-            if ret:
-                self.photo = PIL.ImageTk.PhotoImage(inmage= PIL.Image.fromarray(frame))
-                self.canvas.create_image(0,0, image=self.photo, anchor= tk.NW)
-            self.window.after(self.delay, self.update)
+        if ret:
+            self.photo = PIL.ImageTk.PhotoImage(inmage= PIL.Image.fromarray(frame))
+            self.canvas.create_image(0,0, image=self.photo, anchor= tk.NW)
+        self.window.after(self.delay, self.update)
 
 
 class VideoCapture:

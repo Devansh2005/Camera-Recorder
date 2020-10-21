@@ -56,7 +56,7 @@ class App:
 
         #Upadte GUI with Cv2, pil
 
-    def update(Self):
+    def update(self):
         ret, frame =self.vid.get_frame()
         if self.ok:
             self.vid.out.write(cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))

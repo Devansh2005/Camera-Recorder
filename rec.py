@@ -120,7 +120,7 @@ class VideoCapture:
 
 class ElapsedTimeClock:
     def __init__(self, window):
-        self.T= tk.Label(window, text = "00:00:00", font=("times",20,"bold"),bg="yellow")
+        self.T= tk.Label(window, text = "00:00:00", font=("times",20,"bold"),bg="red")
         self.T.pack(fill=tk.BOTH, expand=1)
 
         self.elapsedTime =dt.datetime(1,1,1)

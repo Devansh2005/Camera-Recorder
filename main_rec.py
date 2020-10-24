@@ -168,6 +168,6 @@ class CommandLineParse:
         self.args =parser.parse_args()
     
 def main():
-    App(tk.Tk(), "Video Recorder")
+    App(tk.Tk(), "Devansh's Video Recorder")
 main()
 

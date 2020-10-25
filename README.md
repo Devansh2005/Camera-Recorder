@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# Camera-Recorder
+# Camera-Recorder - This is a GUI Application.
 
 The camera recorder made using open cv and tkinter
 

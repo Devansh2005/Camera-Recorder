@@ -16,7 +16,6 @@ The camera recorder made using open cv and tkinter
 **420p**
 **720p**
 **1080p**
-**4k**
 
 ## Buttons
 

@@ -8,7 +8,6 @@ The camera recorder made using open cv and tkinter
 
 ### Formats
 
-**AVI**
 **MP4**
 
 ### Dimensions

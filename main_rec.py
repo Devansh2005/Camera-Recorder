@@ -2,7 +2,7 @@ import tkinter as tk
 import cv2
 import PIL.Image, PIL.ImageTk
 import time
-import datetime as dt
+import datetime as dt # importing the date and time
 import argparse  #to pass arguments automatically
 
 class App:

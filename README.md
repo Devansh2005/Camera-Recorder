@@ -2,7 +2,12 @@
 
 # Camera-Recorder - This is a GUI Application made using Tkinter.
 
-The camera recorder made using open cv and tkinter
+**The camera recorder made using open cv and tkinter**
+
+Camera-Recorder is a GUI application which can record video clips.
+Snapshots of key frames can be taken while a clip is in progress.
+Users have the ability to name clips as desired, along with the
+choice of output format and resolution.
 
 ## Video Settings
 

@@ -2,7 +2,7 @@
 
 # Camera-Recorder - This is a GUI Application made using Tkinter
 
-The camera recorder made using open cv and tkinter
+The camera recorder made using open cv and tkinter.
 
 ## Video Settings
 
